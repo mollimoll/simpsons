@@ -1,0 +1,24 @@
+{
+  "name": "farewill-react-task",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1",
+    "styled-components": "^5.1.1",
+    "concurrently": "^5.2.0"
+  },
+  "scripts": {
+    "start": "concurrently \"react-scripts start\""
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
