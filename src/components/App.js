@@ -1,9 +1,11 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 
-import fetchQuotes from "../fetchQuotes"
 import Button from "./Button"
+import CardsContainer from "./CardsContainer"
 import Header from "./Header"
+
+import fetchQuotes from "../fetchQuotes"
 import { CONTENT_WIDTH, SPACING } from "../constants"
 
 const StyledContentWrapper = styled.div`
@@ -18,9 +20,10 @@ const App = () => {
   const [error, setError] = useState()
 
   const handleClick = async () => {
+    setQuotes()
     setLoading(true)
     try {
-      const data = await fetchQuotes()
+      const { data } = await fetchQuotes()
       setQuotes(data)
     } catch (e) {
       setError(e)
@@ -35,7 +38,7 @@ const App = () => {
       <StyledContentWrapper>
         <Button onClick={handleClick}>Load quotes</Button>
         {loading && <p>loading</p>}
-        {quotes && <p>quotes</p>}
+        {quotes && <CardsContainer quotes={quotes} />}
       </StyledContentWrapper>
     </>
   )
