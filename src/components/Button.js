@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
-import { COLOR, BORDER, FONT, SPACING } from "../constants";
+import { COLOR, BORDER, FONT, SPACING } from "../constants"
 
 const StyledButton = styled.button`
   padding: ${SPACING.XS} ${SPACING.M};
@@ -32,10 +32,10 @@ const StyledButton = styled.button`
     pointer-events: none;
     user-select: none;
   }
-`;
+`
 
-const Button = props => {
-  return <StyledButton {...props} />;
-};
+const Button = (props) => {
+  return <StyledButton {...props} />
+}
 
-export default Button;
+export default Button
