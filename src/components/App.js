@@ -23,7 +23,6 @@ const StyledBody = styled.section`
 const App = () => {
   const [loading, setLoading] = useState(false)
   const [quotes, setQuotes] = useState()
-  const [error, setError] = useState()
 
   const handleClick = async () => {
     setQuotes()
@@ -32,7 +31,7 @@ const App = () => {
       const { data } = await fetchQuotes()
       setQuotes(data)
     } catch (e) {
-      setError(e)
+      console.log(e)
     }
     setLoading(false)
   }

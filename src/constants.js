@@ -7,7 +7,7 @@ export const BORDER = {
   SHADOW: {
     M: "0px 4px 8px rgba(0, 0, 0, 0.1)",
   },
-};
+}
 
 export const COLOR = {
   WHITE: "#FFFFFF",
@@ -25,7 +25,7 @@ export const COLOR = {
   },
 
   BACKGROUND: "#F9F9F9",
-};
+}
 
 export const FONT = {
   FAMILY: {
@@ -41,7 +41,7 @@ export const FONT = {
     MEDIUM: 500,
     BOLD: 700,
   },
-};
+}
 
 export const SPACING = {
   XS: "8px",
@@ -49,6 +49,10 @@ export const SPACING = {
   M: "24px",
   L: "32px",
   XL: "48px",
-};
+}
 
-export const CONTENT_WIDTH = "900px";
+export const CONTENT_WIDTH = "900px"
+
+export const DEVICE = {
+  TABLET: "768px",
+}

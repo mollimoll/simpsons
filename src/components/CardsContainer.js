@@ -3,13 +3,13 @@ import styled from "styled-components"
 
 import Card from "./Card"
 
-import { COLOR, CONTENT_WIDTH, FONT, SPACING } from "../constants"
+import { SPACING } from "../constants"
 
 const StyledCardsContainer = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: ${SPACING.L} -${SPACING.S};
 `

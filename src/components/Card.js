@@ -1,7 +1,7 @@
 import React from "react"
 import styled, { css } from "styled-components"
 
-import { BORDER, COLOR, CONTENT_WIDTH, RADIUS, SPACING } from "../constants"
+import { BORDER, COLOR, DEVICE, FONT, SPACING } from "../constants"
 
 const StyledCard = styled.div`
   display: flex;
@@ -13,7 +13,12 @@ const StyledCard = styled.div`
   width: 400px;
   box-shadow: ${BORDER.SHADOW.M};
   margin: ${SPACING.S};
-  padding: ${SPACING.S};
+  font-size: ${FONT.SIZE.M};
+
+  @media (max-width: ${DEVICE.TABLET}) {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 
   ${(props) =>
     props.direction === "Right" &&
@@ -29,16 +34,17 @@ const StyledCard = styled.div`
 
 const StyledImage = styled.img`
   max-height: 200px;
+  margin: ${SPACING.M};
 `
 
-const StyledQuote = styled.div``
+const StyledQuote = styled.div`
+  margin: ${SPACING.M};
 
-// {
-//     quote: string;
-//     character: string;
-//     image: string;
-//     characterDirection: string;
-// }
+  @media (max-width: ${DEVICE.TABLET}) {
+    margin-top: ${SPACING.XS};
+    text-align: center;
+  }
+`
 
 const Card = ({ data }) => {
   const { quote, character, image, characterDirection } = data
