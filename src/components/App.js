@@ -41,8 +41,9 @@ const App = () => {
       <Header />
       <StyledBody>
         <StyledContentWrapper>
-          <Button onClick={handleClick}>Load quotes</Button>
-          {loading && <p>loading</p>}
+          <Button onClick={handleClick}>
+            {loading ? "Loading..." : "Load quotes"}
+          </Button>
           {quotes && <CardsContainer quotes={quotes} />}
         </StyledContentWrapper>
       </StyledBody>

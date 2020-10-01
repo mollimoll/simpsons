@@ -14,7 +14,7 @@ const StyledButton = styled.button`
   font-family: ${FONT.FAMILY.BODY};
   font-size: ${FONT.SIZE.M};
   text-decoration: none;
-  min-width: 8em;
+  min-width: 9em;
 
   &:hover {
     text-decoration: none;
