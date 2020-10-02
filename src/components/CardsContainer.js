@@ -11,7 +11,7 @@ const StyledCardsContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: ${SPACING.L} -${SPACING.S};
+  margin: ${SPACING.L} -${SPACING.XS};
 `
 
 const CardsContainer = ({ quotes }) => {

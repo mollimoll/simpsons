@@ -10,9 +10,10 @@ const StyledCard = styled.div`
   background-color: ${COLOR.WHITE};
   border-radius: ${BORDER.RADIUS.M};
   border: 1px solid ${COLOR.GREY.LIGHT};
-  width: 400px;
+  width: 442px;
+  box-sizing: border-box;
   box-shadow: ${BORDER.SHADOW.M};
-  margin: ${SPACING.S};
+  margin: ${SPACING.XS};
   font-size: ${FONT.SIZE.M};
 
   @media (max-width: ${DEVICE.TABLET}) {
@@ -33,7 +34,7 @@ const StyledCard = styled.div`
 `
 
 const StyledImage = styled.img`
-  max-height: 200px;
+  max-height: 150px;
   margin: ${SPACING.M};
 `
 

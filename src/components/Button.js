@@ -31,11 +31,12 @@ const StyledButton = styled.button`
   &:disabled {
     pointer-events: none;
     user-select: none;
+    background-color: ${COLOR.GREY.LIGHT};
   }
 `
 
 const Button = (props) => {
-  return <StyledButton {...props} />
+  return <StyledButton disabled={props.loading} {...props} />
 }
 
 export default Button
